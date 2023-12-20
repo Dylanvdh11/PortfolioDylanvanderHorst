@@ -1,0 +1,452 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+::selection {
+  background-color: #ffffff;
+  color: #333;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:#1a1c19;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.section-one {
+    background-image: url('img/back1.jpg');
+    background-size: cover;
+    position: relative;
+  }
+  
+  .two {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.four{
+    background-color: red;
+}
+.name{
+    font-size: 100px;
+    margin-left: 7%;
+    padding-top: 14%;
+    width: 85%;
+    color: white;
+    text-align: left;
+}
+.aboutme{
+    font-size: 100px;
+    margin-top: -650px;
+    text-align: center;
+    padding-top: 5%;
+    color: #1a1c19;
+}
+
+.title{
+    z-index: 100;
+    color: white;
+    margin-left: 7.3%;
+}
+
+.fa-solid:hover {
+    color: rgb(120, 120, 120); 
+}
+
+.arrow-div {
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.arrow-div i{
+    color: white;
+    transition: color 0.3s ease;
+}
+  
+  .about-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.about-div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about-sub-div {
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    background-color: #1a1c19;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 4%;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.about-sub-div:hover {
+    /* Adding a stronger box shadow on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.01); /* Slightly scales up the element on hover */
+}   
+
+.about-sub-div-up{
+    margin-top: 2%;
+}
+.aboutmesub-title{
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    width: 100%;
+}
+.aboutmesub{
+    font-size: 20.5px;
+    font-weight: lighter;
+}
+.aboutmesub a{
+    color: white;
+    transition: color 0.3s ease;
+}
+.aboutmesub a:hover{
+    color: rgb(120, 120, 120);
+}
+.button-cv{
+    font-size: 21px;
+    width: 180px;
+    height: 50px;
+    margin-top: 5%;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.button-cv:hover{
+    transform: translateY(-5px);
+}
+.button-cv a{
+    color: #1a1c19;
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.button-cv a:hover{
+    color: rgb(58, 58, 58);
+}
+.mywork{
+    font-size: 100px;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+}
+.images-web{
+text-align: center;
+}
+.website-img{
+    width: 20%;
+}
+.laptop {
+    position: relative;
+    width: 50%; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflowing parts of the slider */
+}
+
+.laptop-img {
+    width: 100%;
+    display: block;
+}
+
+.slider-wrapper {
+    position: absolute;
+    top: 10%; /* Adjust position within the laptop frame */
+    left: 13.5%; /* Adjust position within the laptop frame */
+    width: 73.5%; /* Adjust as needed */
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 10;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 16px; /* Converted from 1rem to pixels */
+    position: absolute;
+    bottom: 20px; /* Adjusted from 1.25rem to pixels */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 8px; /* Converted from 0.5rem to pixels */
+    height: 8px; /* Converted from 0.5rem to pixels */
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+.wrapper-box {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 900px; /* Maximum width */
+    padding: 20px;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: block;
+  fill: rgba(110, 107, 107, 0.5);
+  margin-right: 20px;
+  transition: all 0.2s ease-out;
+}
+
+.icon.active {
+  fill: white;
+}
+
+.icon.big {
+  width: 64px;
+  height: 64px;
+  fill: rgba(51, 51, 51, 0.5);
+}
+
+#wrapper {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #1a1c19;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;  
+}
+
+#left-side {
+  height: 70%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#left-side ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  line-height: 34px;
+  color: rgba(134, 131, 131, 0.5);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+#left-side ul li:hover {
+  color: white;
+  transition: all 0.2s ease-out;
+}
+#left-side ul li:hover > .icon {
+  fill: white;
+}
+#left-side ul li.active {
+  color: white;
+}
+#left-side ul li.active:hover > .icon {
+  fill: white;
+}
+
+#border {
+  height: 288px;
+  width: 1px;
+  background-color: rgba(105, 103, 103, 0.2);
+}
+#border #line.one {
+  width: 5px;
+  height: 54px;
+  background-color: white;
+  margin-left: -2px;
+  margin-top: 60px;
+  transition: all 0.4s ease-in-out;
+}
+#border #line.two {
+  width: 5px;
+  height: 54px;
+  background-color: white;
+  margin-left: -2px;
+  margin-top: 110px;
+  transition: all 0.4s ease-in-out;
+}
+#border #line.three {
+  width: 5px;
+  height: 54px;
+  background-color: white;
+  margin-left: -2px;
+  margin-top: 170px;
+  transition: all 0.4s ease-in-out;
+}
+
+#right-side {
+  height: 300px;
+  width: 75%;
+  overflow: hidden;
+}
+#right-side #first,
+#right-side #second,
+#right-side #third,
+#right-side #fourth {
+  position: absolute;
+  width: 75%;
+  transition: all 0.6s ease-in-out;
+  margin-top: -350px;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#right-side #first h1,
+#right-side #second h1,
+#right-side #third h1,
+#right-side #fourth h1 {
+  font-weight: 800;
+  color: white;
+}
+#right-side #first p,
+#right-side #second p,
+#right-side #third p,
+#right-side #fourth p {
+  color: white;
+  font-weight: 500;
+  padding-left:100px;
+  padding-right: 100px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+}
+#right-side #first.active,
+#right-side #second.active,
+#right-side #third.active,
+#right-side #fourth.active {
+  margin-top: 0px;
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.three{
+  background-color: #1a1c19;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.slider-nav a span {
+  display: block;
+  position: absolute;
+  top: -55px; /* Adjust the distance from the navigation links */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  background:white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #1a1c19;
+  font-weight: bold;
+}
+
+.slider-nav a:hover span {
+  opacity: 1;
+}
